@@ -8,3 +8,5 @@ twitter_username: darekkowalski
 github_username:  darekkowalski
 
 markdown: kramdown
+
+exclude: [vendor]
