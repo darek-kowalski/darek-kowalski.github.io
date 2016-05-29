@@ -323,3 +323,6 @@ achieved by defining one of `ALIAS`, `ANAME` or `A` records.
 
 For this sites purposes the apex domain `darek.dk` will use A records pointing to `192.30.252.153`
 and `192.30.252.154`.
+
+Now its time to share http://darek.dk and the self-referential first post! Do we get https with a
+custom domain here? Can we utilize letsencrypt? How will we handle pull requests? Godspeed!
