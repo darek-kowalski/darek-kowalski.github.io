@@ -82,15 +82,15 @@ When it detects changes to source files, it will rebuild the file and make the g
 output available immediately.
 
 The bare jekyll site structure is made up of a few directories and files. A `.gitignore` is created
-to skip the `\_site` directory, as well as the `.sass-cache` and `.jekyll_metadata` directories.
+to skip the `_site` directory, as well as the `.sass-cache` and `.jekyll_metadata` directories.
 
-In the root directory we have a `Gemfile` defining our Ruby dependencies and a `\_config.yml` file with our jekyll variables. Aside from those configuration files we have `feed.xml`, `index.html` and `about.md`.
+In the root directory we have a `Gemfile` defining our Ruby dependencies and a `_config.yml` file with our jekyll variables. Aside from those configuration files we have `feed.xml`, `index.html` and `about.md`.
 
-The static files are broken down into `\_includes`, `\_layouts`, `\_sass`, `\_posts` and `css` directories.
-`\_includes` contains our header.html and footer.html as well as SVG assets for the Twitter and Github icons.
-`\_layouts` contains our html templates files: `default.html`, `page.html` and `post.html`.
-`\_posts` contains this very posts markdown file.
-`\_sass` contains scss markup to define our site styles: `\_base.scss`, `\_layout.scss`, `\_syntax-highlighting.scss` and `main.scss`.
+The static files are broken down into `_includes`, `_layouts`, `_sass`, `_posts` and `css` directories.
+`_includes` contains our header.html and footer.html as well as SVG assets for the Twitter and Github icons.
+`_layouts` contains our html templates files: `default.html`, `page.html` and `post.html`.
+`_posts` contains this very posts markdown file.
+`_sass` contains scss markup to define our site styles: `_base.scss`, `_layout.scss`, `_syntax-highlighting.scss` and `main.scss`.
 
 Lets create a `README.md` and edit some files before committing to our master branch and pushing up to GitHub.
 
@@ -102,7 +102,7 @@ git commit -m "Added base jekyll site structure"
 git push --set-upstream origin master
 ```
 
-GitHub Pages will now process our files and make the `\_site` directory available at https://darekkowalski.github.io - The `\_site` directory is where jekyll stores generated output.
+GitHub Pages will now process our files and make the `_site` directory available at https://darekkowalski.github.io - The `_site` directory is where jekyll stores generated output.
 
 Our first post looks a little bare, so lets integrate Disqus, a popular comment platform, into our post pages.
 We start by creating an account on Disqus and configuring it for our site.
@@ -127,7 +127,7 @@ The last variable is `tags` and contains a space separated list of tags relevant
  tags: jekyll github disqus
 ```
 
-Now we will add the generated javascript from Disqus into our `\_layouts\post.html` template file and
+Now we will add the generated javascript from Disqus into our `_layouts\post.html` template file and
 use the `disqus_identifier` variable defined in the posts "front matter" to configure the engine. Also,
 we will create a condition to only include the commenting engine when our `comments` variable is set to true.
 
@@ -246,7 +246,7 @@ Configuration file: /home/travis/build/darekkowalski/darekkowalski.github.io/_co
 ```
 
 We need to tell jekyll to skip the vendor directory when building our site in this environment,
-by adding the following line to our `\_config.yml` file.
+by adding the following line to our `_config.yml` file.
 
 ```
 exclude: [vendor]
@@ -292,7 +292,7 @@ To share our build status we will include a build badge in our `README.md` file.
 
 Looking good! Now lets implement some visitor tracking with Google Analytics. Maybe Piwik later?
 After creating an account and site profile lets put the javascript in a separate
-file named `analytics.html` within our `\_include` directory... and then include it in
+file named `analytics.html` within our `_include` directory... and then include it in
 our `default.html` template, right after our `footer.html` include.
 
 Now lets add a custom 404 page by creating a `404.html` file in our root directory.
@@ -326,3 +326,5 @@ and `192.30.252.154`.
 
 Now its time to share http://darek.dk and the self-referential first post! Do we get https with a
 custom domain here? Can we utilize letsencrypt? How will we handle pull requests? Godspeed!
+
+EDIT: There is an easter egg in this post. Funny by-product of static site generation. Can you see it?
