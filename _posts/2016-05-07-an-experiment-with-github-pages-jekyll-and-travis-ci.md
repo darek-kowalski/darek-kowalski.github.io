@@ -1,16 +1,14 @@
 ---
 layout: post
-title:  "An experiment with GitHub Pages and Jekyll"
+title:  "An experiment with GitHub Pages, Jekyll and Travis CI"
 date:   2016-05-07 18:55:23 -0400
 categories:
 comments: true
 disqus_identifier: 9091FAB9-E88D-4EEE-BBA3-C1A0D213C82D
-tags: jekyll github disqus
+tags: jekyll github disqus travis-ci
 ---
 
-# An experiment with GitHub Pages and Jekyll
-
-TLDR; It wasn't too bad; it took just under an hour to get a blog site with comments up and running.
+# An experiment with GitHub Pages, Jekyll and Travis CI
 
 This site is generated from static files manipulated with a simple text editor.
 To help facilitate the creation of these static files, jekyll, a ruby-based static
