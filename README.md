@@ -1,4 +1,4 @@
-# darekkowalski.github.io
+# darek.dk
 
 - An experiment with GitHub Pages and Jekyll.
 

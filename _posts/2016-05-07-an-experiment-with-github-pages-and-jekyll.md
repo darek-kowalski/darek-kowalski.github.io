@@ -316,3 +316,12 @@ permalink instead.
 ```
 
 That works. Now it is time to write this article and share it!
+
+But before we share it, lets implement a custom top-level domain by creating a
+CNAME file in the root directory with the domain name on the first line.
+
+We will need to update our domains DNS records to point to GitHub servers. This can be
+achieved by defining one of ALIAS, ANAME or A records.
+
+For this sites purposes the apex domain `darek.dk` will use A records pointing to 192.30.252.153
+and 192.30.252.154.
